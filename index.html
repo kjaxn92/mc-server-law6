@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建築・景観法典 - サーバー法典アーカイブ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #ffffff;
+            color: #1a202c;
+            line-height: 1.8;
+        }
+
+        .serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        .container-custom {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 50px 70px;
+        }
+
+        /* Architecture & Landscape Theme Color: Terracotta / Brown */
+        .law-header {
+            text-align: center;
+            border-bottom: 4px solid #78350f;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+        }
+
+        .law-header h1 {
+            color: #78350f;
+            letter-spacing: 0.2em;
+        }
+
+        .law-section-title {
+            background-color: #78350f;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.8rem;
+            margin-top: 80px;
+            margin-bottom: 40px;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .chapter-title {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-bottom: 1px solid #fef3c7;
+            padding-bottom: 8px;
+            color: #451a03;
+        }
+
+        .article {
+            margin-bottom: 30px;
+        }
+
+        .article-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+            color: #111827;
+        }
+
+        .article-content {
+            font-size: 1rem;
+            padding-left: 1.25rem;
+            border-left: 2px solid #b45309;
+            text-align: justify;
+        }
+
+        .toc {
+            background-color: #fffbeb;
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 40px;
+            border: 1px solid #fde68a;
+        }
+
+        @media (max-width: 640px) {
+            .container-custom {
+                margin: 0;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-custom">
+        <header class="law-header">
+            <h1 class="text-4xl font-bold serif">第六部 建築・景観法</h1>
+            <p class="text-gray-500 mt-2 tracking-widest uppercase text-xs">Architecture & Landscape Conservation Law</p>
+        </header>
+
+        <nav class="toc">
+            <h2 class="font-bold mb-4 border-b border-amber-200 pb-2">目次</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div>
+                    <h3 class="font-bold text-amber-900 mb-2 underline">建築法</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#arch-1" class="hover:underline">第一章 総則</a></li>
+                        <li><a href="#arch-2" class="hover:underline">第二章 建築の届出</a></li>
+                        <li><a href="#arch-3" class="hover:underline">第三章 建築基準</a></li>
+                        <li><a href="#arch-4" class="hover:underline">第四章 無届建築等への措置</a></li>
+                        <li><a href="#arch-5" class="hover:underline">第五章 開拓行為及び区域管理</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-amber-900 mb-2 underline">景観保全法</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#land-1" class="hover:underline">第一章 総則</a></li>
+                        <li><a href="#land-2" class="hover:underline">第二章 景観保護区域</a></li>
+                        <li><a href="#land-3" class="hover:underline">第三章 是正及び撤去</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 建築法 -->
+        <h2 id="architecture" class="law-section-title serif">建築法</h2>
+        
+        <section id="arch-1">
+            <h2 class="chapter-title">第一章　総則</h2>
+            <div class="article">
+                <span class="article-title">第1条（目的）</span>
+                <p class="article-content">この法律は、建築及び開拓に関する基本的事項を定め、無秩序な土地利用及び建築を防止し、サーバー内の安全、秩序及び良好な環境を確保することを目的とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第2条（定義）</span>
+                <p class="article-content">この法律において「建築」とは、建築物の新築、改築、増築その他これらに準ずる行為をいう。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第3条（適用範囲）</span>
+                <p class="article-content">この法律は、サーバー内において行われるすべての建築及び開拓行為に適用する。</p>
+            </div>
+        </section>
+
+        <section id="arch-2">
+            <h2 class="chapter-title">第二章　建築の届出</h2>
+            <div class="article">
+                <span class="article-title">第4条（建築届出義務）</span>
+                <p class="article-content">建築を行おうとする者は、あらかじめ、内閣総理大臣又はその指定する行政機関に届け出なければならない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第5条（届出事項）</span>
+                <p class="article-content">前条の届出には、建築の場所、規模、用途その他必要な事項を記載しなければならない。</p>
+            </div>
+        </section>
+
+        <section id="arch-3">
+            <h2 class="chapter-title">第三章　建築基準</h2>
+            <div class="article">
+                <span class="article-title">第6条（安全及び秩序）</span>
+                <p class="article-content">建築は、サーバーの安全及び秩序を害しないように行われなければならない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第7条（周辺環境への配慮）</span>
+                <p class="article-content">建築を行うにあたっては、周辺の建築物、景観及び公共施設との調和に配慮しなければならない。</p>
+            </div>
+        </section>
+
+        <section id="arch-4">
+            <h2 class="chapter-title">第四章　無届建築等に対する措置</h2>
+            <div class="article">
+                <span class="article-title">第8条（是正命令）</span>
+                <p class="article-content">この法律に違反して建築又は開拓が行われた場合には、内閣総理大臣又はその指定する行政機関は、当該行為の停止、変更又は撤去を命ずることができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第9条（行政代執行）</span>
+                <p class="article-content">前条の命令に従わない場合には、行政代執行その他必要な措置を講ずることができる。</p>
+            </div>
+        </section>
+
+        <section id="arch-5">
+            <h2 class="chapter-title">第五章　開拓行為及び区域管理</h2>
+            <div class="article">
+                <span class="article-title">第10条（開拓行為の制限）</span>
+                <p class="article-content">サーバー内において、一定の距離を超える区域に立ち入り、土地の開拓、建築、資源採取その他これらに準ずる行為を行おうとする者は、あらかじめ、内閣総理大臣又はその指定する行政機関に届け出なければならない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第11条（無届開拓の禁止）</span>
+                <p class="article-content">前条の規定による届出を行わずに、遠隔地において開拓行為を行ってはならない。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第14条（訴えの提起）</span>
+                <p class="article-content">無届又は不正な開拓行為により、他のサーバーメンバーの権利又はサーバーの秩序が侵害された場合には、当該サーバーメンバーは、法令の定めるところにより、当該行為者に対し、訴えを提起することができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第15条（刑事責任との関係）</span>
+                <p class="article-content">前各条の規定に違反し、重大な秩序の侵害又は被害を生じさせた者については、刑法の定めるところにより処罰される。</p>
+            </div>
+        </section>
+
+        <!-- 景観保全法 -->
+        <h2 id="landscape" class="law-section-title serif">景観保全法</h2>
+        
+        <section id="land-1">
+            <h2 class="chapter-title">第一章　総則</h2>
+            <div class="article">
+                <span class="article-title">第1条（目的）</span>
+                <p class="article-content">この法律は、サーバー内の景観を保全し、良好な景観の形成を図ることにより、快適で秩序ある環境を確保することを目的とする。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第2条（基本方針）</span>
+                <p class="article-content">景観の保全は、公共の福祉に配慮しつつ、サーバーメンバーの創造的活動との調和を図りながら行われなければならない。</p>
+            </div>
+        </section>
+
+        <section id="land-2">
+            <h2 class="chapter-title">第二章　景観保護区域</h2>
+            <div class="article">
+                <span class="article-title">第3条（指定）</span>
+                <p class="article-content">国は、公共施設の周辺、中央拠点その他景観の保全が特に必要と認められる区域を、景観保護区域として指定することができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第4条（制限）</span>
+                <p class="article-content">景観保護区域内においては、建築物の形状、規模、外観その他の事項について、必要な制限を設けることができる。</p>
+            </div>
+        </section>
+
+        <section id="land-3">
+            <h2 class="chapter-title">第三章　| 是正及び撤去</h2>
+            <div class="article">
+                <span class="article-title">第5条（是正命令）</span>
+                <p class="article-content">前条の制限に違反した行為があった場合には、内閣総理大臣又はその指定する行政機関は、当該行為の是正、変更又は撤去を命ずることができる。</p>
+            </div>
+            <div class="article">
+                <span class="article-title">第6条（行政代執行）</span>
+                <p class="article-content">前条の命令に従わない場合には、行政代執行その他必要な措置を講ずることができる。</p>
+            </div>
+        </section>
+
+        <footer class="mt-20 pt-10 border-t border-gray-100 text-center text-gray-400 text-xs">
+            <p>&copy; Minecraft Server Legislative Archive - Construction & Landscape Division</p>
+        </footer>
+    </div>
+
+</body>
+</html>
+
